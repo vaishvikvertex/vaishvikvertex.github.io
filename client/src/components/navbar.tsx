@@ -2,7 +2,13 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { 
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Menu, ChevronDown } from "lucide-react";
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -16,6 +22,13 @@ export default function Navbar() {
     { name: "Projects", href: "/projects" },
     { name: "Knowledge", href: "/knowledge-hub" },
     { name: "Media", href: "/media" },
+  ];
+
+  const collaborations = [
+    { name: "Synergia Technologies", href: "/collaborations/synergia" },
+    { name: "Orbitek Systems", href: "/collaborations/orbitek" },
+    { name: "Novex Dynamics", href: "/collaborations/novex" },
+    { name: "BlueCore Industries", href: "/collaborations/bluecore" },
   ];
 
   const isActive = (href: string) => location === href;
@@ -53,6 +66,32 @@ export default function Navbar() {
                   {item.name}
                 </Link>
               ))}
+              
+              {/* Collaborations Dropdown */}
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button 
+                    variant="ghost" 
+                    className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary-600 flex items-center gap-1"
+                  >
+                    Collaborations
+                    <ChevronDown className="h-4 w-4" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-56">
+                  {collaborations.map((collaboration) => (
+                    <DropdownMenuItem key={collaboration.name} asChild>
+                      <Link
+                        href={collaboration.href}
+                        className="w-full cursor-pointer"
+                      >
+                        {collaboration.name}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+              
               <Link href="/contact">
                 <Button className="bg-primary text-white hover:bg-primary/90">
                   Contact
@@ -85,6 +124,24 @@ export default function Navbar() {
                       {item.name}
                     </Link>
                   ))}
+                  
+                  {/* Collaborations Section */}
+                  <div className="border-t pt-4">
+                    <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
+                      Collaborations
+                    </h3>
+                    {collaborations.map((collaboration) => (
+                      <Link
+                        key={collaboration.name}
+                        href={collaboration.href}
+                        className="block text-base font-medium text-gray-700 hover:text-primary-600 py-1 pl-4"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {collaboration.name}
+                      </Link>
+                    ))}
+                  </div>
+                  
                   <Link href="/contact" onClick={() => setIsOpen(false)}>
                     <Button className="w-full bg-primary text-white hover:bg-primary/90">
                       Contact
