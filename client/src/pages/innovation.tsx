@@ -63,6 +63,18 @@ const rdInitiatives = [
     description: "Framework for optimizing industrial operations with focus on sustainability and efficiency.",
     status: "Research",
     team: "Sustainability Team"
+  },
+  {
+    title: "Advanced BIM Analytics Platform",
+    description: "Next-generation Building Information Modeling platform with AI-powered analytics and automated clash detection.",
+    status: "Beta Testing",
+    team: "BIM Innovation Lab"
+  },
+  {
+    title: "4D Construction Simulation",
+    description: "Real-time 4D modeling and simulation platform for construction project management and optimization.",
+    status: "Development",
+    team: "Digital Construction Team"
   }
 ];
 

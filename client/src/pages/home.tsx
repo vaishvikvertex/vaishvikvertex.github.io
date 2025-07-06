@@ -20,6 +20,11 @@ const sectors = [
     badge: "Energy"
   },
   {
+    title: "BIM & Digital Construction",
+    description: "Building Information Modeling, digital twins, and smart construction technologies for modern infrastructure.",
+    badge: "BIM"
+  },
+  {
     title: "Aerospace",
     description: "Precision engineering and advanced manufacturing solutions for aerospace and defense applications.",
     badge: "Aerospace"
@@ -48,6 +53,12 @@ const featuredProjects = [
     title: "Vessel Inspection System",
     description: "AI-powered inspection system for marine vessels with automated defect detection and reporting.",
     sector: "Marine",
+    year: "2024"
+  },
+  {
+    title: "Smart Building BIM Integration",
+    description: "Complete Building Information Modeling system for a 50-story commercial complex with digital twin capabilities.",
+    sector: "BIM",
     year: "2024"
   }
 ];

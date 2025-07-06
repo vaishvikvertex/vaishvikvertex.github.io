@@ -118,6 +118,20 @@ export default function Orbitek() {
             </div>
             
             <div className="space-y-6">
+              {/* Hero Image */}
+              <div className="relative h-64 bg-gradient-to-br from-blue-600 to-purple-700 rounded-2xl overflow-hidden">
+                <div className="absolute inset-0 bg-black/20"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <svg className="w-32 h-32 text-white/30" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-lg font-semibold">Satellite Technology</h3>
+                  <p className="text-sm text-white/80">Space Systems Engineering</p>
+                </div>
+              </div>
+              
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-4">

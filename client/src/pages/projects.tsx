@@ -44,6 +44,18 @@ const featuredProjects = [
     description: "Advanced quality control system for aerospace manufacturing with AI-powered defect detection.",
     sector: "Aerospace",
     year: "2023"
+  },
+  {
+    title: "Smart Building BIM Integration",
+    description: "Complete Building Information Modeling system for a 50-story commercial complex with digital twin capabilities.",
+    sector: "BIM",
+    year: "2024"
+  },
+  {
+    title: "Infrastructure Digital Twin",
+    description: "Digital twin implementation for major bridge infrastructure with real-time structural health monitoring.",
+    sector: "BIM",
+    year: "2024"
   }
 ];
 
@@ -71,6 +83,14 @@ const caseStudies = [
     solution: "Automated inspection system with computer vision technology",
     results: ["90% faster inspection process", "Zero safety incidents", "Enhanced regulatory compliance"],
     sector: "Marine"
+  },
+  {
+    title: "BIM Digital Transformation",
+    client: "Major Construction Firm",
+    challenge: "Complex multi-phase construction project coordination and clash detection",
+    solution: "Comprehensive BIM implementation with 4D scheduling and digital twin modeling",
+    results: ["60% reduction in design conflicts", "3 months faster project delivery", "20% cost savings"],
+    sector: "BIM"
   }
 ];
 

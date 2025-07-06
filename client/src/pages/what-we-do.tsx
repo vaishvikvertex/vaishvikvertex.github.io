@@ -37,6 +37,11 @@ const sectors = [
     badge: "Aerospace"
   },
   {
+    title: "BIM & Digital Construction",
+    description: "Building Information Modelling and digital twin solutions for construction and infrastructure projects.",
+    badge: "BIM"
+  },
+  {
     title: "Renewables",
     description: "Sustainable energy solutions and green technology implementations.",
     badge: "Green Tech"
@@ -126,6 +131,19 @@ const services = [
       "API Development"
     ],
     color: "bg-green-100 text-green-600"
+  },
+  {
+    icon: Monitor,
+    title: "BIM & Digital Modeling",
+    description: "Building Information Modelling and digital twin technologies for construction and engineering projects.",
+    features: [
+      "3D Building Information Modeling",
+      "Digital Twin Development",
+      "Construction Documentation",
+      "Clash Detection & Resolution",
+      "Asset Lifecycle Management"
+    ],
+    color: "bg-purple-100 text-purple-600"
   }
 ];
 
@@ -135,14 +153,41 @@ export default function WhatWeDo() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 bg-gradient-to-br from-blue-50 to-indigo-100 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-blue-400 rounded-full blur-2xl"></div>
+          <div className="absolute top-32 right-20 w-48 h-48 bg-indigo-400 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-purple-400 rounded-full blur-2xl"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">What We Do</h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Comprehensive engineering services and digital solutions designed to optimize performance 
               and drive innovation across diverse industries.
             </p>
+            
+            {/* Visual Service Icons */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 max-w-4xl mx-auto">
+              <div className="flex flex-col items-center p-4 bg-white/60 rounded-xl backdrop-blur-sm hover:bg-white/80 transition-colors">
+                <Ship className="h-10 w-10 text-blue-600 mb-2" />
+                <span className="text-sm font-medium text-gray-700">Marine</span>
+              </div>
+              <div className="flex flex-col items-center p-4 bg-white/60 rounded-xl backdrop-blur-sm hover:bg-white/80 transition-colors">
+                <Cog className="h-10 w-10 text-indigo-600 mb-2" />
+                <span className="text-sm font-medium text-gray-700">Engineering</span>
+              </div>
+              <div className="flex flex-col items-center p-4 bg-white/60 rounded-xl backdrop-blur-sm hover:bg-white/80 transition-colors">
+                <Monitor className="h-10 w-10 text-purple-600 mb-2" />
+                <span className="text-sm font-medium text-gray-700">Digital</span>
+              </div>
+              <div className="flex flex-col items-center p-4 bg-white/60 rounded-xl backdrop-blur-sm hover:bg-white/80 transition-colors">
+                <Brain className="h-10 w-10 text-teal-600 mb-2" />
+                <span className="text-sm font-medium text-gray-700">AI Solutions</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

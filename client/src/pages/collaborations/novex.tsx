@@ -118,6 +118,20 @@ export default function Novex() {
             </div>
             
             <div className="space-y-6">
+              {/* Hero Image */}
+              <div className="relative h-64 bg-gradient-to-br from-orange-600 to-red-700 rounded-2xl overflow-hidden">
+                <div className="absolute inset-0 bg-black/20"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <svg className="w-32 h-32 text-white/30" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2c5.523 0 10 4.477 10 10 0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2C7.582 4 4 7.582 4 12s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm1 5v6l4-3-4-3z"/>
+                  </svg>
+                </div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-lg font-semibold">Propulsion Systems</h3>
+                  <p className="text-sm text-white/80">Aerospace Engineering</p>
+                </div>
+              </div>
+              
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-4">
