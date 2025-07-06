@@ -1,0 +1,167 @@
+Here’s a **clean, AI-agent-ready version** of your full **Company Website Structure**, formatted for use in generation tasks (e.g. prompt injection, web scaffold creation, CMS planning, etc.):
+
+---
+
+## 🌐 **Modern Company Website Structure**
+
+### 1. **Home**
+
+* Company Introduction
+* Sector Highlights
+* Product & Innovation Focus
+* Featured Projects / News
+* Call-to-Action (Contact, Careers)
+
+---
+
+### 2. **About**
+
+* **Who We Are** – Company overview, history *(from MoA)*
+* **Mission & Vision** *(to be written)*
+* **Core Values** *(to be written)*
+* **Our Beliefs / Philosophy** *(to be written)*
+* **Our Team**
+
+  * Core Team
+  * Management
+  * Advisory
+* **Milestones** – Timeline of achievements
+* **Careers**
+
+  * Current Openings
+  * Work Culture
+  * Why Join Us
+  * Resume Upload
+* **Alliances & Partnerships** – Academic/Industry partners *(MoA supported)*
+
+---
+
+### 3. **What We Do**
+
+#### ➤ **Sectors**
+
+*(Legally supported by MoA)*
+
+* Marine Operations
+* Shipping
+* Offshore Oil & Gas
+* Subsea Engineering
+* Ports & Harbours
+* Energy & Renewables
+* Manufacturing
+* Process Industries
+* Aerospace
+* Defense & Security
+* Health Industries
+* Mining & Deep Sea Mining
+* Chemical & Civil Engineering
+* Space Industries
+* Port Assets Management
+
+#### ➤ **Products**
+
+*(Directly supported by MoA)*
+
+* Software Development Solutions
+* Digital Twin Technologies
+* AI Products & Solutions
+* Asset Condition Monitoring Systems
+
+#### ➤ **Services**
+
+**Engineering & Consulting**
+
+* Engineering Review
+* Technical Due Diligence
+* Risk Analysis
+* Life Extension Studies
+* Design & Condition Assessment
+* Inspections (2nd/3rd Party)
+
+**Marine Services**
+
+* Marine Advisory, Assurance & Inspection
+* Marine Design, Upgrade & Conversion
+* Statutory & Certification Support
+
+**Digital & QA**
+
+* Digital Solutions
+* Asset Monitoring
+* NDT Support
+* Field QA
+
+**Training & Safety**
+
+* Maritime Training
+* Accidents/Incidents Investigation
+* Safety & Compliance Programs
+
+---
+
+### 4. **Innovation**
+
+* R\&D Initiatives
+* Patents & Publications
+* Technology Stack
+* **AI / Digital Twin / IoT**
+
+  * Artificial Intelligence
+  * Digital Twin
+  * IoT / Industry 4.0
+* Innovation Labs & Collaborations
+* Ventures (Spin-offs, Joint Initiatives)
+
+---
+
+### 5. **Projects**
+
+* Featured Projects
+* Case Studies
+* Client List (optional)
+* Project Outcomes & Impact
+
+---
+
+### 6. **Knowledge Hub**
+
+* Blogs & Insights
+* Technical Articles
+* Case Studies
+* FAQs
+* Glossary
+* Download Center (whitepapers, brochures, etc.)
+
+---
+
+### 7. **Media**
+
+* Newsroom
+* Events (Upcoming / Past)
+* Webinars & Talks
+* Publications & White Papers
+* Media Gallery
+* Video Library
+
+---
+
+### 8. **Contact**
+
+* Inquiry Form
+* Office Locations
+* Business / Partnership Contact
+* Careers Contact
+* Maps / Phones / Emails
+
+---
+
+### 9. **Collaborations** *(Sub-pages)*
+
+* `/collaborations/synergia`
+* `/collaborations/orbitek`
+* `/collaborations/novex`
+* `/collaborations/bluecore`
+
+---
+
+Let me know if you'd like this exported to a Markdown file, Notion-ready structure, or copied into a Next.js scaffold!
