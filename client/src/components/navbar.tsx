@@ -45,7 +45,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="ml-4">
-                <h1 className="text-xl font-bold text-gray-900">TechCorp Solutions</h1>
+                <h1 className="text-xl font-bold text-gray-900">V²S PVT.LTD.</h1>
               </div>
             </Link>
           </div>

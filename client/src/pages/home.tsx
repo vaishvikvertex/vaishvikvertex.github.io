@@ -10,6 +10,26 @@ import { ArrowRight } from "lucide-react";
 
 const sectors = [
   {
+    title: "Design",
+    description: "Comprehensive marine engineering, offshore operations, and subsea solutions for the maritime industry.",
+    badge: "Design"
+  }, 
+  {
+    title: "Advanced Engineering Simulation & Analysis",
+    description: "Comprehensive marine engineering, offshore operations, and subsea solutions for the maritime industry.",
+    badge: "Simulation"
+  },
+  {
+    title: "Marine & Structural Engineering Solutions",
+    description: "Comprehensive marine engineering, offshore operations, and subsea solutions for the maritime industry.",
+    badge: "Marine"
+  },
+  {
+    title: "Safety, Risk & Reliability Analysis",
+    description: "Comprehensive marine engineering, offshore operations, and subsea solutions for the maritime industry.",
+    badge: "Risk"
+  },
+  {
     title: "Marine & Offshore",
     description: "Comprehensive marine engineering, offshore operations, and subsea solutions for the maritime industry.",
     badge: "Marine"
@@ -29,11 +49,6 @@ const sectors = [
     description: "Precision engineering and advanced manufacturing solutions for aerospace and defense applications.",
     badge: "Aerospace"
   },
-  {
-    title: "Renewables",
-    description: "Sustainable energy solutions and green technology implementations for a cleaner future.",
-    badge: "Green Tech"
-  }
 ];
 
 const featuredProjects = [
@@ -75,7 +90,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Sectors We Serve</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Expertise</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Delivering cutting-edge engineering solutions across diverse industries with proven expertise and innovation.
             </p>

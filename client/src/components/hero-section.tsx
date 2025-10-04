@@ -13,11 +13,11 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Engineering the Future with{" "}
-              <span className="text-primary">AI-Powered Solutions</span>
+              Engineering and AI:{" "}
+              <span className="text-primary">End-to-End Solutions from Design to Deployment</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Leading provider of structural analysis, digital twin development, and AI-based solutions across marine, oil & gas, aerospace, and industrial sectors.
+              In high-stakes industries, there is no margin for error. We provide engineering and AI solutions that deliver certainty and performance. By integrating rigorous structural analysis and CFD with intelligent digital twin development, we empower you with predictive insights that prevent failures and optimize operations.From initial design to full-scale deployment, our end-to-end solutions enhance asset integrity across the marine, offshore, sub-sea, oil & gas, aerospace, and industrial sectors.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact">

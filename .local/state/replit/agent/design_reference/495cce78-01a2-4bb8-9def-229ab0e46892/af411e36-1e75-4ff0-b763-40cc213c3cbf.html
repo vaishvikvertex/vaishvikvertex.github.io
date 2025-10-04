@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Company Website - Engineering Solutions & AI Innovation</title>
+    <meta name="description" content="Leading provider of engineering solutions, AI-based digital twin development, and technical consulting across marine, oil & gas, and industrial sectors.">
+    
+    <!-- TODO: Add comprehensive SEO metadata -->
+    <!-- TODO: Add OpenGraph and Twitter Card metadata -->
+    <!-- TODO: Add structured data (JSON-LD) -->
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        'primary': {
+                            50: '#eff6ff',
+                            500: '#1E40AF',
+                            600: '#1d4ed8',
+                            700: '#1e3a8a',
+                        },
+                        'secondary': {
+                            500: '#059669',
+                            600: '#047857',
+                        },
+                        'accent': {
+                            500: '#DC2626',
+                            600: '#dc2626',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                    }
+                }
+            }
+        };
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="font-inter bg-white text-gray-800 leading-relaxed">
+    
+    <!-- @COMPONENT: Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <img class="h-8 w-auto" src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=126&h=32" alt="Company Logo" data-mock="true">
+                        <!-- TODO: Replace with actual company logo -->
+                    </div>
+                    <div class="ml-4">
+                        <h1 class="text-xl font-bold text-primary-700" data-mock="true">VAISHVIK VERTEX SOLUTIONS PRIVATE LIMITED</h1>
+                        <!-- TODO: Replace with actual company name -->
+                    </div>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="#about" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="#services" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">What We Do</a>
+                        <a href="#innovation" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">Innovation</a>
+                        <a href="#projects" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
+                        <a href="#knowledge" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">Knowledge</a>
+                        <a href="#media" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">Media</a>
+                        <a href="#contact" class="bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary-700 transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="md:hidden">
+                    <button class="text-gray-700 hover:text-primary-600 p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navbar -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section id="home" class="relative bg-gradient-to-br from-primary-50 to-blue-100 py-20 overflow-hidden">
+        <!-- Modern cityscape with technology integration -->
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://pixabay.com/get/g61d17de4ec299bedfa6621a879315391cdf32dccf826c620fd75dcbf67ebdd99da478fd1d99b7c0558bee324af372529f81fbab2ff5c59e51f5ee80c718ef040_1280.jpg" alt="Modern technology background" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        Engineering and AI:
+                        <span class="text-primary-600">End-to-End Solutions from Design to Deployment</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Leading provider of engineering and AI-driven solutions, delivering structural analysis, digital twin development, and intelligent systems from design to deployment across marine, oil & gas, aerospace, and industrial sectors.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors text-center">
+                            Get Started
+                        </a>
+                        <a href="#services" class="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors text-center">
+                            Our Services
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="animate-slide-up">
+                    <!-- High-tech industrial facility or digital twin visualization -->
+                    <img src="https://pixabay.com/get/g97a4b5f6907e308f42250767af7b7c24656df6422072f622b59590fd4fab98d9a69075e61cde620490370cae69bae883782a7f1c6bbfa1c6ffcf8f1b53d8c85b_1280.jpg" alt="Advanced industrial facility with digital technology overlay" class="rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Sector Highlights -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Sectors We Serve</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Delivering cutting-edge engineering solutions across diverse industries with proven expertise and innovation.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- @COMPONENT: SectorCard -->
+                Engineering the Future with AI-Powered Solutions
+                
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-100">
+                    <!-- Oil and gas refinery with industrial infrastructure -->
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=200" alt="Oil and gas refinery with modern industrial infrastructure" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Oil & Gas</h3>
+                    <p class="text-gray-600 text-sm">
+                        Advanced solutions for upstream, midstream, and downstream operations in the energy sector.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-100">
+                    <!-- Aerospace manufacturing facility -->
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=200" alt="Aerospace manufacturing facility with precision engineering" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Aerospace</h3>
+                    <p class="text-gray-600 text-sm">
+                        Precision engineering and advanced manufacturing solutions for aerospace and defense applications.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-100">
+                    <!-- Renewable energy wind farm -->
+                    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=200" alt="Renewable energy wind farm with modern turbines" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Renewables</h3>
+                    <p class="text-gray-600 text-sm">
+                        Sustainable energy solutions and green technology implementations for a cleaner future.
+                    </p>
+                </div>
+                <!-- @END_COMPONENT: SectorCard -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Sector Highlights -->
+
+    <!-- @COMPONENT: Innovation Showcase -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Innovation at the Core</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Pioneering AI-driven solutions, digital twin technology, and advanced analytics to transform industrial operations.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">AI-Powered Analytics</h3>
+                    <p class="text-gray-600 mb-4">
+                        Advanced machine learning algorithms for predictive maintenance, anomaly detection, and performance optimization.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Machine Learning & Deep Learning</li>
+                        <li>• Computer Vision & NLP</li>
+                        <li>• Predictive Analytics</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-cube text-secondary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Digital Twin Technology</h3>
+                    <p class="text-gray-600 mb-4">
+                        Real-time digital replicas of physical systems for simulation, monitoring, and optimization.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Real-time Monitoring</li>
+                        <li>• Simulation & Modeling</li>
+                        <li>• System Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-network-wired text-accent-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">IoT & Industry 4.0</h3>
+                    <p class="text-gray-600 mb-4">
+                        Connected systems and smart manufacturing solutions for enhanced productivity and efficiency.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Smart Sensors & Devices</li>
+                        <li>• Process Automation</li>
+                        <li>• Data Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Innovation Showcase -->
+
+    <!-- @COMPONENT: About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About TechCorp Solutions</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        We are a leading technology company specializing in engineering solutions, AI-based digital twin development, and comprehensive technical consulting across multiple industries.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        Our expertise spans structural analysis, computational fluid dynamics, reliability studies, and cutting-edge digital transformation solutions for marine, oil & gas, aerospace, and industrial sectors.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary-600 mb-2" data-mock="true">50+</div>
+                            <div class="text-sm text-gray-600">Projects Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary-600 mb-2" data-mock="true">15+</div>
+                            <div class="text-sm text-gray-600">Industries Served</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                        Learn More About Us
+                    </a>
+                </div>
+                
+                <div class="space-y-8">
+                    <!-- Modern engineering team collaborating -->
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400" alt="Engineering team collaborating on advanced projects" class="rounded-xl shadow-lg">
+                    
+                    <!-- @COMPONENT: MissionValues -->
+                    <div class="bg-gray-50 rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Our Mission</h3>
+                        <p class="text-gray-600 text-sm">
+                            To deliver innovative engineering solutions that drive industry transformation through advanced technology, exceptional expertise, and unwavering commitment to excellence.
+                        </p>
+                        <!-- TODO: Add actual mission statement -->
+                    </div>
+                    <!-- @END_COMPONENT: MissionValues -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About Section -->
+
+    <!-- @COMPONENT: Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What We Do</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive engineering services and digital solutions designed to optimize performance and drive innovation.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Engineering & Consulting -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-cogs text-primary-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Engineering & Consulting</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• Engineering Review & Analysis</li>
+                        <li>• Technical Due Diligence</li>
+                        <li>• Risk Assessment & Management</li>
+                        <li>• Life Extension Studies</li>
+                        <li>• Design & Condition Assessment</li>
+                    </ul>
+                </div>
+                
+                <!-- Marine Services -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-ship text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Marine Services</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• Marine Advisory & Inspection</li>
+                        <li>• Marine Design & Upgrade</li>
+                        <li>• Conversion Services</li>
+                        <li>• Statutory & Certification</li>
+                        <li>• Compliance Support</li>
+                    </ul>
+                </div>
+                
+                <!-- Digital Solutions -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-digital-tachograph text-secondary-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Digital & QA</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• Digital Transformation</li>
+                        <li>• Asset Monitoring Systems</li>
+                        <li>• NDT Support Services</li>
+                        <li>• Field QA & Inspection</li>
+                        <li>• Quality Enhancement</li>
+                    </ul>
+                </div>
+                
+                <!-- Training & Safety -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-accent-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Training & Safety</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• Maritime Training Programs</li>
+                        <li>• Accident Investigation</li>
+                        <li>• Safety & Compliance</li>
+                        <li>• Professional Development</li>
+                        <li>• Certification Support</li>
+                    </ul>
+                </div>
+                
+                <!-- AI Solutions -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-robot text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">AI Solutions</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• AI-Based Digital Twins</li>
+                        <li>• Predictive Analytics</li>
+                        <li>• Anomaly Detection</li>
+                        <li>• Automated Monitoring</li>
+                        <li>• Intelligent Optimization</li>
+                    </ul>
+                </div>
+                
+                <!-- Software Development -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-code text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Software Development</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• Custom Software Solutions</li>
+                        <li>• System Integration</li>
+                        <li>• Mobile Applications</li>
+                        <li>• Web Platforms</li>
+                        <li>• API Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Services Section -->
+
+    <!-- @COMPONENT: Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Showcasing our expertise through successful project deliveries across diverse industries.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @COMPONENT: ProjectCard -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <!-- Offshore oil platform digital twin -->
+                    <img src="https://pixabay.com/get/g675f9c737271a846af83139a303f5c0d292921ec3ac88f1996061a6284f866b9a69bba9c8fcddb7dd763414f3a7f06667073b9e5e6f4617cff6066bc31358499_1280.jpg" alt="Offshore oil platform with digital twin technology" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-primary-100 text-primary-700 text-xs px-2 py-1 rounded-full">Oil & Gas</span>
+                            <span class="text-gray-500 text-xs" data-mock="true">2024</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2" data-mock="true">Offshore Platform Digital Twin</h3>
+                        <p class="text-gray-600 text-sm mb-4" data-mock="true">
+                            AI-powered digital twin implementation for real-time monitoring and predictive maintenance of offshore drilling operations.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-primary-600 font-medium text-sm">View Case Study</span>
+                            <i class="fas fa-arrow-right text-primary-600"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <!-- Smart manufacturing facility -->
+                    <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=250" alt="Smart manufacturing facility with IoT sensors" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-secondary-100 text-secondary-700 text-xs px-2 py-1 rounded-full">Manufacturing</span>
+                            <span class="text-gray-500 text-xs" data-mock="true">2023</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2" data-mock="true">Smart Factory Implementation</h3>
+                        <p class="text-gray-600 text-sm mb-4" data-mock="true">
+                            IoT-enabled smart manufacturing system with real-time analytics and automated quality control.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-primary-600 font-medium text-sm">View Case Study</span>
+                            <i class="fas fa-arrow-right text-primary-600"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <!-- Marine vessel inspection -->
+                    <img src="https://pixabay.com/get/gc432b6c3e1abb3fc2e1bf9821a1116b7a0b7de617f50937af9fe342530f11ae37f242cda8b91c50322fcd30b4d24dbe51947a6f6e1f4af8ef7646b8b44348212_1280.jpg" alt="Marine vessel undergoing digital inspection" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded-full">Marine</span>
+                            <span class="text-gray-500 text-xs" data-mock="true">2024</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2" data-mock="true">Vessel Inspection System</h3>
+                        <p class="text-gray-600 text-sm mb-4" data-mock="true">
+                            AI-powered inspection system for marine vessels with automated defect detection and reporting.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-primary-600 font-medium text-sm">View Case Study</span>
+                            <i class="fas fa-arrow-right text-primary-600"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_COMPONENT: ProjectCard -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Projects Section -->
+
+    <!-- @COMPONENT: Knowledge Hub -->
+    <section id="knowledge" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Knowledge Hub</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Insights, resources, and technical expertise to help you stay ahead in the evolving industrial landscape.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @COMPONENT: KnowledgeCard -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-blog text-primary-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Technical Blog</h3>
+                    <p class="text-gray-600 mb-4">
+                        Latest insights on AI, digital twins, and engineering innovations from our expert team.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary-600 font-medium text-sm">Read Articles</span>
+                        <span class="bg-primary-100 text-primary-700 text-xs px-2 py-1 rounded-full" data-mock="true">12 Posts</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-file-alt text-secondary-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">White Papers</h3>
+                    <p class="text-gray-600 mb-4">
+                        In-depth research and analysis on industry trends, technologies, and best practices.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary-600 font-medium text-sm">Download Papers</span>
+                        <span class="bg-secondary-100 text-secondary-700 text-xs px-2 py-1 rounded-full" data-mock="true">8 Papers</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-question-circle text-accent-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">FAQ & Support</h3>
+                    <p class="text-gray-600 mb-4">
+                        Answers to common questions about our services, technologies, and implementation processes.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary-600 font-medium text-sm">Browse FAQ</span>
+                        <span class="bg-accent-100 text-accent-700 text-xs px-2 py-1 rounded-full" data-mock="true">25 FAQs</span>
+                    </div>
+                </div>
+                <!-- @END_COMPONENT: KnowledgeCard -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Knowledge Hub -->
+
+    <!-- @COMPONENT: Media Section -->
+    <section id="media" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Media & Events</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Stay updated with our latest news, events, and industry participation.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Latest News -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Latest News</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-2 h-2 bg-primary-600 rounded-full mt-2"></div>
+                            <div>
+                                <p class="font-medium text-gray-900" data-mock="true">New AI Partnership Announcement</p>
+                                <p class="text-sm text-gray-600" data-mock="true">Strategic collaboration to advance digital twin technology</p>
+                                <p class="text-xs text-gray-500 mt-1" data-mock="true">March 15, 2024</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-2 h-2 bg-primary-600 rounded-full mt-2"></div>
+                            <div>
+                                <p class="font-medium text-gray-900" data-mock="true">Industry Conference Participation</p>
+                                <p class="text-sm text-gray-600" data-mock="true">Presenting at the Global Maritime Technology Summit</p>
+                                <p class="text-xs text-gray-500 mt-1" data-mock="true">March 10, 2024</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-2 h-2 bg-primary-600 rounded-full mt-2"></div>
+                            <div>
+                                <p class="font-medium text-gray-900" data-mock="true">Innovation Award Recognition</p>
+                                <p class="text-sm text-gray-600" data-mock="true">Awarded for excellence in digital transformation</p>
+                                <p class="text-xs text-gray-500 mt-1" data-mock="true">March 5, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Upcoming Events -->
+                <div class="bg-primary-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Upcoming Events</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm font-medium text-primary-600" data-mock="true">Apr 20, 2024</span>
+                                <span class="bg-primary-100 text-primary-700 text-xs px-2 py-1 rounded">Webinar</span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-1" data-mock="true">AI in Industrial Operations</h4>
+                            <p class="text-sm text-gray-600" data-mock="true">Learn how AI is transforming industrial processes</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm font-medium text-primary-600" data-mock="true">May 15, 2024</span>
+                                <span class="bg-secondary-100 text-secondary-700 text-xs px-2 py-1 rounded">Conference</span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-1" data-mock="true">Digital Twin Summit</h4>
+                            <p class="text-sm text-gray-600" data-mock="true">Join us at the premier digital twin conference</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm font-medium text-primary-600" data-mock="true">Jun 10, 2024</span>
+                                <span class="bg-accent-100 text-accent-700 text-xs px-2 py-1 rounded">Workshop</span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-1" data-mock="true">Marine Technology Workshop</h4>
+                            <p class="text-sm text-gray-600" data-mock="true">Hands-on workshop on marine engineering solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Media Section -->
+
+    <!-- @COMPONENT: Collaborations Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Strategic Collaborations</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Building partnerships that drive innovation and create value across industries.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- @COMPONENT: CollaborationCard -->
+                <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-colors">
+                    <div class="w-16 h-16 bg-primary-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-atom text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2" data-mock="true">Synergia Technologies</h3>
+                    <p class="text-gray-300 text-sm mb-4" data-mock="true">
+                        Advanced materials and nanotechnology solutions for industrial applications.
+                    </p>
+                    <a href="#" class="text-primary-400 hover:text-primary-300 text-sm font-medium">Learn More →</a>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-colors">
+                    <div class="w-16 h-16 bg-secondary-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-satellite text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2" data-mock="true">Orbitek Systems</h3>
+                    <p class="text-gray-300 text-sm mb-4" data-mock="true">
+                        Space technology and satellite communication systems for global connectivity.
+                    </p>
+                    <a href="#" class="text-primary-400 hover:text-primary-300 text-sm font-medium">Learn More →</a>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-colors">
+                    <div class="w-16 h-16 bg-accent-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-rocket text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2" data-mock="true">Novex Dynamics</h3>
+                    <p class="text-gray-300 text-sm mb-4" data-mock="true">
+                        Propulsion systems and advanced aerospace engineering solutions.
+                    </p>
+                    <a href="#" class="text-primary-400 hover:text-primary-300 text-sm font-medium">Learn More →</a>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-colors">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-water text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2" data-mock="true">BlueCore Industries</h3>
+                    <p class="text-gray-300 text-sm mb-4" data-mock="true">
+                        Marine robotics and autonomous underwater vehicle technologies.
+                    </p>
+                    <a href="#" class="text-primary-400 hover:text-primary-300 text-sm font-medium">Learn More →</a>
+                </div>
+                <!-- @END_COMPONENT: CollaborationCard -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Collaborations Section -->
+
+    <!-- @COMPONENT: Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ready to discuss your next project? Contact our team of experts for personalized solutions.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- @COMPONENT: ContactForm -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Send us a Message</h3>
+                    <form class="space-y-6">
+                        <!-- TODO: Implement form validation and submission -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Company</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="Your Company">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Service Interest</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                <option>Select a service...</option>
+                                <option>Engineering & Consulting</option>
+                                <option>Marine Services</option>
+                                <option>Digital Solutions</option>
+                                <option>AI & Machine Learning</option>
+                                <option>Training & Safety</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <!-- @END_COMPONENT: ContactForm -->
+                
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-primary-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Office Location</h4>
+                                    <p class="text-gray-600" data-mock="true">123 Innovation Drive<br>Tech District, City 12345</p>
+                                    <!-- TODO: Add actual office address -->
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-phone text-secondary-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Phone</h4>
+                                    <p class="text-gray-600" data-mock="true">+1 (555) 123-4567</p>
+                                    <!-- TODO: Add actual phone number -->
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-envelope text-accent-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Email</h4>
+                                    <p class="text-gray-600" data-mock="true">info@techcorp.com</p>
+                                    <!-- TODO: Add actual email address -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Business Hours -->
+                    <div class="bg-gray-50 rounded-xl p-6">
+                        <h4 class="font-semibold text-gray-900 mb-4">Business Hours</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Monday - Friday</span>
+                                <span class="text-gray-900" data-mock="true">9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Saturday</span>
+                                <span class="text-gray-900" data-mock="true">10:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Sunday</span>
+                                <span class="text-gray-900">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="bg-primary-50 rounded-xl p-6">
+                        <h4 class="font-semibold text-gray-900 mb-4">Quick Links</h4>
+                        <div class="grid grid-cols-2 gap-3">
+                            <a href="#" class="text-primary-600 hover:text-primary-700 text-sm">Career Opportunities</a>
+                            <a href="#" class="text-primary-600 hover:text-primary-700 text-sm">Partner with Us</a>
+                            <a href="#" class="text-primary-600 hover:text-primary-700 text-sm">Technical Support</a>
+                            <a href="#" class="text-primary-600 hover:text-primary-700 text-sm">Media Inquiries</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact Section -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img class="h-8 w-auto" src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=126&h=32" alt="Company Logo" data-mock="true">
+                        <span class="ml-2 text-xl font-bold" data-mock="true">TechCorp</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Leading provider of engineering solutions and AI-powered technologies for industrial transformation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Engineering & Consulting</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Marine Services</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Digital Solutions</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">AI & Machine Learning</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Training & Safety</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Our Team</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Partnerships</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">News & Media</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Knowledge Hub</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">White Papers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Technical Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Support Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2024 TechCorp Solutions. All rights reserved.
+                    <!-- TODO: Update year and company name -->
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <!-- @COMPONENT: FAQ Section (Hidden by default) -->
+    <section class="hidden" id="faq-section">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <!-- @COMPONENT: FAQItem -->
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between focus:outline-none">
+                        <span class="font-medium text-gray-900">What industries do you serve?</span>
+                        <i class="fas fa-chevron-down text-gray-500"></i>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                        <p class="text-gray-600">
+                            We serve a wide range of industries including marine, oil & gas, aerospace, manufacturing, renewables, and more. Our solutions are designed to address the specific challenges of each sector.
+                        </p>
+                    </div>
+                </div>
+                <!-- @END_COMPONENT: FAQItem -->
+                <!-- TODO: Add more FAQ items -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: FAQ Section -->
+
+    <!-- @COMPONENT: Timeline Component (Hidden by default) -->
+    <section class="hidden" id="timeline-section">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Company Milestones</h2>
+            <div class="relative">
+                <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-300"></div>
+                <!-- @COMPONENT: TimelineItem -->
+                <div class="relative flex items-center mb-8">
+                    <div class="absolute left-6 w-4 h-4 bg-primary-600 rounded-full"></div>
+                    <div class="ml-16">
+                        <div class="text-sm text-gray-500" data-mock="true">2024</div>
+                        <h3 class="font-semibold text-gray-900" data-mock="true">AI Innovation Award</h3>
+                        <p class="text-gray-600" data-mock="true">Recognized for excellence in AI-powered industrial solutions</p>
+                    </div>
+                </div>
+                <!-- @END_COMPONENT: TimelineItem -->
+                <!-- TODO: Add more timeline items -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Timeline Component -->
+
+    <!-- @COMPONENT: Download Card Component (Hidden by default) -->
+    <section class="hidden" id="download-cards">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- @COMPONENT: DownloadCard -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-file-pdf text-red-500 text-2xl mr-3"></i>
+                    <div>
+                        <h3 class="font-semibold text-gray-900" data-mock="true">Digital Twin Guide</h3>
+                        <p class="text-sm text-gray-500" data-mock="true">PDF • 2.5 MB</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 text-sm mb-4" data-mock="true">
+                    Comprehensive guide to implementing digital twin technology in industrial operations.
+                </p>
+                <button class="w-full bg-primary-600 text-white py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors">
+                    Download
+                </button>
+            </div>
+            <!-- @END_COMPONENT: DownloadCard -->
+            <!-- TODO: Add more download cards -->
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Download Card Component -->
+
+    <!-- TODO: Add cookie consent banner -->
+    <!-- TODO: Add accessibility improvements (ARIA labels, keyboard navigation) -->
+    <!-- TODO: Add schema.org structured data for SEO -->
+    <!-- TODO: Implement image optimization with Next.js Image component -->
+    <!-- TODO: Add analytics tracking (Google Analytics) -->
+    <!-- TODO: Add PWA capabilities -->
+    <!-- TODO: Add multi-language support -->
+
+    <script>
+        // TODO: Implement business logic, API calls, and state management
+        // Basic smooth scrolling functionality
+        (() => {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Basic form validation placeholder
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // TODO: Implement form submission logic
+                    alert('Form submission not yet implemented. Please check back later.');
+                });
+            }
+        })();
+    </script>
+
+</body>
+</html>
