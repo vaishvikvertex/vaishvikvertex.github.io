@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git remote set-url:*)",
+      "WebFetch(domain:vaishvikvertex.github.io)",
+      "Bash(gh repo view:*)",
+      "Bash(npm run deploy:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
