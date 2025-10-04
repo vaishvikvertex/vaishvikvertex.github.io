@@ -19,7 +19,7 @@ import BlueCore from "@/pages/collaborations/bluecore";
 
 function Router() {
   return (
-    <WouterRouter base="/vaishvikvertex">
+    <WouterRouter base="/">
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
