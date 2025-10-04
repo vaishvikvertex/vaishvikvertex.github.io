@@ -9,7 +9,9 @@
       "Bash(git remote set-url:*)",
       "WebFetch(domain:vaishvikvertex.github.io)",
       "Bash(gh repo view:*)",
-      "Bash(npm run deploy:*)"
+      "Bash(npm run deploy:*)",
+      "Bash(npm install)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []
