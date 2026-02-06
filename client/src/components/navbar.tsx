@@ -17,7 +17,6 @@ export default function Navbar() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Services", href: "/what-we-do" },
     { name: "Projects", href: "/projects" },
   ];
 
@@ -64,14 +63,14 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              {/* Our Pillars Dropdown */}
+              {/* What We Do Dropdown */}
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button
                     variant="ghost"
                     className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary-600 flex items-center gap-1"
                   >
-                    Pillars
+                    What We Do
                     <ChevronDown className="h-4 w-4" />
                   </Button>
                 </DropdownMenuTrigger>
@@ -122,10 +121,10 @@ export default function Navbar() {
                     </Link>
                   ))}
 
-                  {/* Our Pillars Section */}
+                  {/* What We Do Section */}
                   <div className="border-t pt-4">
                     <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
-                      Our Pillars
+                      What We Do
                     </h3>
                     {pillars.map((pillar) => (
                       <Link
