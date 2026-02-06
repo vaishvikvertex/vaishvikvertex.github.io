@@ -2,11 +2,13 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Timeline from "@/components/timeline";
 import TeamCard from "@/components/team-card";
+import PillarCard from "@/components/pillar-card";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowRight, Target, Eye, Heart } from "lucide-react";
+import { ArrowRight, Target, Eye, Heart, Award, Users, Globe, Layers, Lightbulb, Zap, FileText } from "lucide-react";
+import { PILLARS } from "@/data/pillar-content";
 
 const milestones = [
   {
@@ -62,13 +64,57 @@ const teamMembers = [
   }
 ];
 
+const innovations = [
+  {
+    icon: Award,
+    title: "Patents & Publications",
+    count: "15+",
+    description: "Patents filed and research papers published"
+  },
+  {
+    icon: Users,
+    title: "Research Partnerships",
+    count: "8",
+    description: "Active collaborations with universities"
+  },
+  {
+    icon: Globe,
+    title: "Innovation Labs",
+    count: "3",
+    description: "Dedicated research facilities"
+  }
+];
+
+const technologies = [
+  {
+    title: "Artificial Intelligence",
+    description: "Advanced machine learning algorithms and neural networks for industrial applications.",
+    applications: ["Predictive Maintenance", "Quality Control", "Process Optimization"]
+  },
+  {
+    title: "Digital Twin",
+    description: "Real-time digital representations of physical systems for enhanced monitoring.",
+    applications: ["Asset Monitoring", "Performance Simulation", "Predictive Analytics"]
+  },
+  {
+    title: "IoT & Industry 4.0",
+    description: "Connected devices and smart manufacturing solutions.",
+    applications: ["Smart Sensors", "Automated Systems", "Remote Monitoring"]
+  },
+  {
+    title: "Advanced Analytics",
+    description: "Big data processing and analytics for actionable insights.",
+    applications: ["Data Visualization", "Statistical Analysis", "Business Intelligence"]
+  }
+];
+
 export default function About() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+      <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About V²S PVT.LTD</h1>
@@ -102,7 +148,7 @@ export default function About() {
       </section>
       
       {/* Mission, Vision, Values */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <Card>
@@ -155,9 +201,87 @@ export default function About() {
           </div>
         </div>
       </section>
-      
+
+      {/* What We Do - Pillar Cards */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What We Do</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Our expertise spans five strategic pillars delivering comprehensive engineering and technology solutions.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {PILLARS.map((pillar) => (
+              <PillarCard
+                key={pillar.id}
+                title={pillar.title}
+                shortTitle={pillar.shortTitle}
+                description={pillar.tagline}
+                icon={pillar.icon}
+                gradient={pillar.gradient}
+                slug={pillar.slug}
+                domainCount={pillar.domains.length}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Innovation & Research */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Innovation & Research</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Pioneering the future through cutting-edge research and breakthrough innovations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {innovations.map((innovation, index) => {
+              const Icon = innovation.icon;
+              return (
+                <Card key={index}>
+                  <CardContent className="p-6 text-center">
+                    <Icon className="h-12 w-12 text-primary mx-auto mb-4" />
+                    <div className="text-3xl font-bold text-gray-900 mb-2">{innovation.count}</div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{innovation.title}</h3>
+                    <p className="text-gray-600 text-sm">{innovation.description}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {technologies.map((tech, index) => (
+              <Card key={index}>
+                <CardHeader>
+                  <CardTitle className="flex items-center">
+                    <Layers className="h-6 w-6 text-primary mr-2" />
+                    {tech.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">{tech.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {tech.applications.map((app, appIndex) => (
+                      <Badge key={appIndex} variant="outline" className="text-xs">
+                        {app}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Company History */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Journey</h2>
@@ -171,7 +295,7 @@ export default function About() {
       </section>
       
       {/* Team Section */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Leadership Team</h2>
@@ -189,7 +313,7 @@ export default function About() {
       </section>
       
       {/* Careers Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Join Our Team</h2>
