@@ -8,10 +8,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">TC</span>
-              </div>
-              <span className="ml-2 text-xl font-bold">TechCorp</span>
+              <img
+                src="/logo-white-bg.png"
+                alt="V²S Logo"
+                className="h-10 w-auto object-contain bg-white rounded-lg p-1"
+              />
             </div>
             <p className="text-gray-400 mb-4">
               Leading provider of engineering solutions and AI-powered technologies for industrial transformation.
@@ -30,13 +31,13 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-lg font-semibold mb-4">Our Pillars</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/what-we-do" className="hover:text-white transition-colors">Engineering & Consulting</Link></li>
-              <li><Link href="/what-we-do" className="hover:text-white transition-colors">Marine Services</Link></li>
-              <li><Link href="/what-we-do" className="hover:text-white transition-colors">Digital Solutions</Link></li>
-              <li><Link href="/innovation" className="hover:text-white transition-colors">AI & Machine Learning</Link></li>
-              <li><Link href="/what-we-do" className="hover:text-white transition-colors">Training & Safety</Link></li>
+              <li><Link href="/pillars/ai-cognitive-computing" className="hover:text-white transition-colors">AI & Cognitive Computing</Link></li>
+              <li><Link href="/pillars/maritime-offshore" className="hover:text-white transition-colors">Maritime & Offshore</Link></li>
+              <li><Link href="/pillars/asset-health-predictive" className="hover:text-white transition-colors">Asset Health & Predictive</Link></li>
+              <li><Link href="/pillars/industrial-safety-risk" className="hover:text-white transition-colors">Safety, Risk & Reliability</Link></li>
+              <li><Link href="/pillars/robotics-autonomy-digital" className="hover:text-white transition-colors">Robotics & Digital Reality</Link></li>
             </ul>
           </div>
           
@@ -65,7 +66,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 TechCorp Solutions. All rights reserved.
+            © 2024 V²S PVT.LTD. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>

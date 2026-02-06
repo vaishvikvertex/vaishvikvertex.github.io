@@ -24,6 +24,14 @@ export default function Navbar() {
     { name: "Media", href: "/media" },
   ];
 
+  const pillars = [
+    { name: "Advanced AI & Cognitive Computing", href: "/pillars/ai-cognitive-computing" },
+    { name: "Maritime & Offshore Engineering", href: "/pillars/maritime-offshore" },
+    { name: "Asset Health & Predictive Intelligence", href: "/pillars/asset-health-predictive" },
+    { name: "Industrial Safety, Risk & Reliability", href: "/pillars/industrial-safety-risk" },
+    { name: "Robotics, Autonomy & Digital Reality", href: "/pillars/robotics-autonomy-digital" },
+  ];
+
   const collaborations = [
     { name: "Synergia Technologies", href: "/collaborations/synergia" },
     { name: "Orbitek Systems", href: "/collaborations/orbitek" },
@@ -40,12 +48,11 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <div className="flex-shrink-0">
-                <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">TC</span>
-                </div>
-              </div>
-              <div className="ml-4">
-                <h1 className="text-xl font-bold text-gray-900">V²S PVT.LTD.</h1>
+                <img
+                  src="/logo-white-bg.png"
+                  alt="V²S Logo"
+                  className="h-12 w-auto object-contain"
+                />
               </div>
             </Link>
           </div>
@@ -66,7 +73,32 @@ export default function Navbar() {
                   {item.name}
                 </Link>
               ))}
-              
+
+              {/* Our Pillars Dropdown */}
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary-600 flex items-center gap-1"
+                  >
+                    Our Pillars
+                    <ChevronDown className="h-4 w-4" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-64">
+                  {pillars.map((pillar) => (
+                    <DropdownMenuItem key={pillar.name} asChild>
+                      <Link
+                        href={pillar.href}
+                        className="w-full cursor-pointer"
+                      >
+                        {pillar.name}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+
               {/* Collaborations Dropdown */}
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -124,7 +156,24 @@ export default function Navbar() {
                       {item.name}
                     </Link>
                   ))}
-                  
+
+                  {/* Our Pillars Section */}
+                  <div className="border-t pt-4">
+                    <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
+                      Our Pillars
+                    </h3>
+                    {pillars.map((pillar) => (
+                      <Link
+                        key={pillar.name}
+                        href={pillar.href}
+                        className="block text-base font-medium text-gray-700 hover:text-primary-600 py-1 pl-4"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {pillar.name}
+                      </Link>
+                    ))}
+                  </div>
+
                   {/* Collaborations Section */}
                   <div className="border-t pt-4">
                     <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">

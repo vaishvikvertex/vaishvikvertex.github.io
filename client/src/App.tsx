@@ -16,6 +16,11 @@ import Synergia from "@/pages/collaborations/synergia";
 import Orbitek from "@/pages/collaborations/orbitek";
 import Novex from "@/pages/collaborations/novex";
 import BlueCore from "@/pages/collaborations/bluecore";
+import AICognitive from "@/pages/pillars/ai-cognitive-computing";
+import MaritimeOffshore from "@/pages/pillars/maritime-offshore";
+import AssetHealthPredictive from "@/pages/pillars/asset-health-predictive";
+import IndustrialSafetyRisk from "@/pages/pillars/industrial-safety-risk";
+import RoboticsAutonomyDigital from "@/pages/pillars/robotics-autonomy-digital";
 
 function Router() {
   return (
@@ -33,6 +38,11 @@ function Router() {
         <Route path="/collaborations/orbitek" component={Orbitek} />
         <Route path="/collaborations/novex" component={Novex} />
         <Route path="/collaborations/bluecore" component={BlueCore} />
+        <Route path="/pillars/ai-cognitive-computing" component={AICognitive} />
+        <Route path="/pillars/maritime-offshore" component={MaritimeOffshore} />
+        <Route path="/pillars/asset-health-predictive" component={AssetHealthPredictive} />
+        <Route path="/pillars/industrial-safety-risk" component={IndustrialSafetyRisk} />
+        <Route path="/pillars/robotics-autonomy-digital" component={RoboticsAutonomyDigital} />
         <Route component={NotFound} />
       </Switch>
     </WouterRouter>

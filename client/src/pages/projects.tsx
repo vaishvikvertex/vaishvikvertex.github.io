@@ -1,6 +1,8 @@
+import { useState, useMemo } from "react";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ProjectCard from "@/components/project-card";
+import PillarFilter from "@/components/pillar-filter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -13,49 +15,57 @@ const featuredProjects = [
     title: "Offshore Platform Digital Twin",
     description: "AI-powered digital twin implementation for real-time monitoring and predictive maintenance of offshore drilling operations.",
     sector: "Oil & Gas",
-    year: "2024"
+    year: "2024",
+    pillarIds: ["pillar-1", "pillar-5"]
   },
   {
     title: "Smart Factory Implementation",
     description: "IoT-enabled smart manufacturing system with real-time analytics and automated quality control.",
     sector: "Manufacturing",
-    year: "2023"
+    year: "2023",
+    pillarIds: ["pillar-3", "pillar-5"]
   },
   {
     title: "Vessel Inspection System",
     description: "AI-powered inspection system for marine vessels with automated defect detection and reporting.",
     sector: "Marine",
-    year: "2024"
+    year: "2024",
+    pillarIds: ["pillar-1", "pillar-2"]
   },
   {
     title: "Renewable Energy Optimization",
     description: "Wind farm performance optimization using machine learning and predictive analytics.",
     sector: "Renewables",
-    year: "2023"
+    year: "2023",
+    pillarIds: ["pillar-1", "pillar-3"]
   },
   {
     title: "Port Asset Management",
     description: "Comprehensive asset management system for major international port operations.",
     sector: "Infrastructure",
-    year: "2024"
+    year: "2024",
+    pillarIds: ["pillar-2", "pillar-3"]
   },
   {
     title: "Aerospace Quality Control",
     description: "Advanced quality control system for aerospace manufacturing with AI-powered defect detection.",
     sector: "Aerospace",
-    year: "2023"
+    year: "2023",
+    pillarIds: ["pillar-1", "pillar-4"]
   },
   {
     title: "Smart Building BIM Integration",
     description: "Complete Building Information Modeling system for a 50-story commercial complex with digital twin capabilities.",
     sector: "BIM",
-    year: "2024"
+    year: "2024",
+    pillarIds: ["pillar-5"]
   },
   {
     title: "Infrastructure Digital Twin",
     description: "Digital twin implementation for major bridge infrastructure with real-time structural health monitoring.",
     sector: "BIM",
-    year: "2024"
+    year: "2024",
+    pillarIds: ["pillar-3", "pillar-5"]
   }
 ];
 
@@ -116,6 +126,27 @@ const projectStats = [
 ];
 
 export default function Projects() {
+  const [selectedPillars, setSelectedPillars] = useState<string[]>([]);
+
+  // Calculate project counts per pillar
+  const projectCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    featuredProjects.forEach(project => {
+      project.pillarIds?.forEach(pillarId => {
+        counts[pillarId] = (counts[pillarId] || 0) + 1;
+      });
+    });
+    return counts;
+  }, []);
+
+  // Filter projects by selected pillars
+  const filteredProjects = useMemo(() => {
+    if (selectedPillars.length === 0) return featuredProjects;
+    return featuredProjects.filter(project =>
+      project.pillarIds?.some(id => selectedPillars.includes(id))
+    );
+  }, [selectedPillars]);
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -166,12 +197,25 @@ export default function Projects() {
                   Highlighting our most impactful projects that demonstrate our technical excellence and innovation.
                 </p>
               </div>
-              
+
+              {/* Pillar Filter */}
+              <PillarFilter
+                selectedPillars={selectedPillars}
+                onFilterChange={setSelectedPillars}
+                projectCounts={projectCounts}
+              />
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {featuredProjects.map((project, index) => (
+                {filteredProjects.map((project, index) => (
                   <ProjectCard key={index} {...project} />
                 ))}
               </div>
+
+              {filteredProjects.length === 0 && (
+                <div className="text-center py-12">
+                  <p className="text-gray-500 text-lg">No projects found for the selected pillars.</p>
+                </div>
+              )}
             </TabsContent>
             
             <TabsContent value="cases" className="space-y-8">

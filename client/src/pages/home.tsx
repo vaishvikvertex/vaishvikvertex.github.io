@@ -2,54 +2,14 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
 import InnovationShowcase from "@/components/innovation-showcase";
-import SectorCard from "@/components/sector-card";
+import PillarCard from "@/components/pillar-card";
 import ProjectCard from "@/components/project-card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
+import { PILLARS } from "@/data/pillar-content";
 
-const sectors = [
-  {
-    title: "Design",
-    description: "Comprehensive marine engineering, offshore operations, and subsea solutions for the maritime industry.",
-    badge: "Design"
-  }, 
-  {
-    title: "Advanced Engineering Simulation & Analysis",
-    description: "Comprehensive marine engineering, offshore operations, and subsea solutions for the maritime industry.",
-    badge: "Simulation"
-  },
-  {
-    title: "Marine & Structural Engineering Solutions",
-    description: "Comprehensive marine engineering, offshore operations, and subsea solutions for the maritime industry.",
-    badge: "Marine"
-  },
-  {
-    title: "Safety, Risk & Reliability Analysis",
-    description: "Comprehensive marine engineering, offshore operations, and subsea solutions for the maritime industry.",
-    badge: "Risk"
-  },
-  {
-    title: "Marine & Offshore",
-    description: "Comprehensive marine engineering, offshore operations, and subsea solutions for the maritime industry.",
-    badge: "Marine"
-  },
-  {
-    title: "Oil & Gas",
-    description: "Advanced solutions for upstream, midstream, and downstream operations in the energy sector.",
-    badge: "Energy"
-  },
-  {
-    title: "BIM & Digital Construction",
-    description: "Building Information Modeling, digital twins, and smart construction technologies for modern infrastructure.",
-    badge: "BIM"
-  },
-  {
-    title: "Aerospace",
-    description: "Precision engineering and advanced manufacturing solutions for aerospace and defense applications.",
-    badge: "Aerospace"
-  },
-];
+// Pillars are imported from pillar-content.ts
 
 const featuredProjects = [
   {
@@ -86,26 +46,35 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection />
       
-      {/* Sector Highlights */}
+      {/* Our 5 Pillars */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Expertise</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our 5 Pillars of Excellence</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Delivering cutting-edge engineering solutions across diverse industries with proven expertise and innovation.
+              Comprehensive solutions across five strategic pillars, delivering innovation and expertise that drives your success.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {sectors.map((sector, index) => (
-              <SectorCard key={index} {...sector} />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            {PILLARS.map((pillar) => (
+              <PillarCard
+                key={pillar.id}
+                title={pillar.title}
+                shortTitle={pillar.shortTitle}
+                description={pillar.description}
+                icon={pillar.icon}
+                gradient={pillar.gradient}
+                slug={pillar.slug}
+                domainCount={pillar.domains.length}
+              />
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Link href="/what-we-do">
               <Button className="bg-primary hover:bg-primary/90">
-                View All Sectors
+                Explore All Pillars
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
