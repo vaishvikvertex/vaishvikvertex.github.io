@@ -46,23 +46,23 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection />
       
-      {/* Our 5 Pillars */}
+      {/* Our 5 Pillars - Simplified */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our 5 Pillars of Excellence</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Expertise</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive solutions across five strategic pillars, delivering innovation and expertise that drives your success.
+              Five strategic pillars delivering comprehensive engineering and technology solutions.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-            {PILLARS.map((pillar) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {PILLARS.slice(0, 3).map((pillar) => (
               <PillarCard
                 key={pillar.id}
                 title={pillar.title}
                 shortTitle={pillar.shortTitle}
-                description={pillar.description}
+                description={pillar.tagline}
                 icon={pillar.icon}
                 gradient={pillar.gradient}
                 slug={pillar.slug}
@@ -73,8 +73,8 @@ export default function Home() {
 
           <div className="text-center mt-12">
             <Link href="/what-we-do">
-              <Button className="bg-primary hover:bg-primary/90">
-                Explore All Pillars
+              <Button size="lg" className="bg-primary hover:bg-primary/90">
+                View All Services
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -82,28 +82,26 @@ export default function Home() {
         </div>
       </section>
       
-      {/* Innovation Showcase */}
-      <InnovationShowcase />
       
-      {/* Featured Projects */}
-      <section className="py-20 bg-white">
+      {/* Featured Projects - Simplified */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Recent Projects</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Showcasing our expertise through successful project deliveries across diverse industries.
+              Delivering measurable results across industries.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProjects.map((project, index) => (
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {featuredProjects.slice(0, 3).map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Link href="/projects">
-              <Button className="bg-primary hover:bg-primary/90">
+              <Button size="lg" className="bg-primary hover:bg-primary/90">
                 View All Projects
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -113,24 +111,18 @@ export default function Home() {
       </section>
       
       {/* Call to Action */}
-      <section className="py-20 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Operations?</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Contact our team of experts to discuss how we can help optimize your industrial processes with cutting-edge technology.
+      <section className="py-16 bg-primary text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+          <p className="text-lg text-white/90 mb-8">
+            Contact us to discuss your project needs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90 text-lg px-8 py-3">
-                Get Started Today
-              </Button>
-            </Link>
-            <Link href="/about">
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-3">
-                Learn More About Us
-              </Button>
-            </Link>
-          </div>
+          <Link href="/contact">
+            <Button size="lg" variant="secondary" className="text-lg px-8">
+              Contact Us
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
       

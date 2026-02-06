@@ -11,7 +11,11 @@
       "Bash(gh repo view:*)",
       "Bash(npm run deploy:*)",
       "Bash(npm install)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(test:*)",
+      "Bash(claude-code plugin marketplace add:*)",
+      "Bash(ls:*)",
+      "Bash(npm run check:*)"
     ],
     "deny": [],
     "ask": []

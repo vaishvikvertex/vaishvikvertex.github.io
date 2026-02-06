@@ -25,60 +25,21 @@ export default function WhatWeDo() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Our 5 Pillars of Excellence
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              What We Do
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-8">
-              Comprehensive engineering and technology solutions organized into five strategic pillars,
-              delivering innovation, expertise, and measurable results across {stats.totalDomains} specialized domains.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Engineering and technology solutions organized into five strategic pillars.
             </p>
-          </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <Card className="bg-white/60 backdrop-blur-sm border-2">
-              <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold text-primary mb-2">{stats.totalPillars}</div>
-                <p className="text-gray-600 text-sm">Strategic Pillars</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white/60 backdrop-blur-sm border-2">
-              <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold text-primary mb-2">{stats.totalDomains}</div>
-                <p className="text-gray-600 text-sm">Specialized Domains</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white/60 backdrop-blur-sm border-2">
-              <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold text-primary mb-2">{stats.totalProjects}</div>
-                <p className="text-gray-600 text-sm">Projects Completed</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white/60 backdrop-blur-sm border-2">
-              <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold text-primary mb-2">{stats.avgSatisfaction}</div>
-                <p className="text-gray-600 text-sm">Client Satisfaction</p>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
 
       {/* Pillar Cards Grid */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Explore Our Pillars
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Each pillar represents a core area of expertise, delivering specialized solutions
-              tailored to your industry's unique challenges.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {PILLARS.map((pillar) => (
               <PillarCard
                 key={pillar.id}
@@ -95,100 +56,6 @@ export default function WhatWeDo() {
         </div>
       </section>
 
-      {/* Integrated Approach */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              An Integrated Approach
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our five pillars work together seamlessly, providing comprehensive solutions
-              that address every aspect of your operational challenges.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Cross-Pillar Expertise
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Complex challenges often require expertise from multiple domains. Our integrated
-                  approach ensures seamless collaboration across pillars for comprehensive solutions.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Unified project teams</span>
-                  </li>
-                  <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Shared best practices</span>
-                  </li>
-                  <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Holistic problem-solving</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  End-to-End Solutions
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  From initial assessment through design, implementation, and ongoing support,
-                  we provide complete lifecycle solutions across all our pillars.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Comprehensive assessments</span>
-                  </li>
-                  <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Turnkey implementation</span>
-                  </li>
-                  <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Continuous optimization</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Industry-Specific Solutions
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  While our pillars represent core capabilities, we tailor our approach to your
-                  industry's specific requirements and regulatory environment.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Industry best practices</span>
-                  </li>
-                  <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Regulatory compliance</span>
-                  </li>
-                  <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Custom workflows</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gray-900 text-white">

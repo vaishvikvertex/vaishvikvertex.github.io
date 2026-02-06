@@ -18,7 +18,7 @@ import {
 
 const newsItems = [
   {
-    title: "TechCorp Solutions Wins AI Innovation Award 2024",
+    title: "V²S PVT.LTD Wins AI Innovation Award 2024",
     summary: "Recognized for excellence in AI-powered industrial solutions and digital transformation initiatives.",
     date: "March 20, 2024",
     category: "Awards",

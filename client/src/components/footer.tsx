@@ -11,7 +11,7 @@ export default function Footer() {
               <img
                 src="/logo-white-bg.png"
                 alt="V²S Logo"
-                className="h-10 w-auto object-contain bg-white rounded-lg p-1"
+                className="h-12 w-auto object-contain bg-white rounded p-2"
               />
             </div>
             <p className="text-gray-400 mb-4">

@@ -10,7 +10,7 @@ interface PillarHeroProps {
 
 export default function PillarHero({ pillar }: PillarHeroProps) {
   return (
-    <section className={`py-20 bg-gradient-to-br ${pillar.gradient} relative overflow-hidden`}>
+    <section className={`py-16 bg-gradient-to-br ${pillar.gradient} relative overflow-hidden`}>
       {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-64 h-64 bg-white rounded-full blur-3xl"></div>
@@ -35,13 +35,13 @@ export default function PillarHero({ pillar }: PillarHeroProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Content */}
           <div className="text-white">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {pillar.title}
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-4 font-medium">
+            <p className="text-xl text-white/90 mb-3 font-medium">
               {pillar.tagline}
             </p>
-            <p className="text-lg text-white/80 mb-8">
+            <p className="text-base text-white/80 mb-6">
               {pillar.description}
             </p>
 

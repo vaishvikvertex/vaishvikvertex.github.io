@@ -11,15 +11,15 @@ export default function DomainBrochure({
   pillarColor,
 }: DomainBrochureProps) {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our Domains of Expertise
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-3">
+            Our Capabilities
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive capabilities across {domains.length} specialized domains, delivering end-to-end solutions tailored to your needs
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            {domains.length} specialized domains delivering comprehensive solutions
           </p>
         </div>
 
