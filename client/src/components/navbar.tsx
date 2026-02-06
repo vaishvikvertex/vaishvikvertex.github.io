@@ -17,41 +17,31 @@ export default function Navbar() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "What We Do", href: "/what-we-do" },
-    { name: "Innovation", href: "/innovation" },
+    { name: "Services", href: "/what-we-do" },
     { name: "Projects", href: "/projects" },
-    { name: "Knowledge", href: "/knowledge-hub" },
-    { name: "Media", href: "/media" },
   ];
 
   const pillars = [
-    { name: "Advanced AI & Cognitive Computing", href: "/pillars/ai-cognitive-computing" },
-    { name: "Maritime & Offshore Engineering", href: "/pillars/maritime-offshore" },
-    { name: "Asset Health & Predictive Intelligence", href: "/pillars/asset-health-predictive" },
-    { name: "Industrial Safety, Risk & Reliability", href: "/pillars/industrial-safety-risk" },
-    { name: "Robotics, Autonomy & Digital Reality", href: "/pillars/robotics-autonomy-digital" },
-  ];
-
-  const collaborations = [
-    { name: "Synergia Technologies", href: "/collaborations/synergia" },
-    { name: "Orbitek Systems", href: "/collaborations/orbitek" },
-    { name: "Novex Dynamics", href: "/collaborations/novex" },
-    { name: "BlueCore Industries", href: "/collaborations/bluecore" },
+    { name: "AI & Cognitive Computing", href: "/pillars/ai-cognitive-computing" },
+    { name: "Maritime & Offshore", href: "/pillars/maritime-offshore" },
+    { name: "Asset Health & Predictive", href: "/pillars/asset-health-predictive" },
+    { name: "Safety & Reliability", href: "/pillars/industrial-safety-risk" },
+    { name: "Robotics & Digital Reality", href: "/pillars/robotics-autonomy-digital" },
   ];
 
   const isActive = (href: string) => location === href;
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <div className="flex-shrink-0">
                 <img
                   src="/logo-white-bg.png"
                   alt="V²S Logo"
-                  className="h-16 w-auto object-contain"
+                  className="h-12 w-auto object-contain"
                 />
               </div>
             </Link>
@@ -59,7 +49,7 @@ export default function Navbar() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-center space-x-6">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -81,11 +71,11 @@ export default function Navbar() {
                     variant="ghost"
                     className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary-600 flex items-center gap-1"
                   >
-                    Our Pillars
+                    Pillars
                     <ChevronDown className="h-4 w-4" />
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="w-64">
+                <DropdownMenuContent align="end" className="w-56">
                   {pillars.map((pillar) => (
                     <DropdownMenuItem key={pillar.name} asChild>
                       <Link
@@ -99,31 +89,6 @@ export default function Navbar() {
                 </DropdownMenuContent>
               </DropdownMenu>
 
-              {/* Collaborations Dropdown */}
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button 
-                    variant="ghost" 
-                    className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary-600 flex items-center gap-1"
-                  >
-                    Collaborations
-                    <ChevronDown className="h-4 w-4" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="w-56">
-                  {collaborations.map((collaboration) => (
-                    <DropdownMenuItem key={collaboration.name} asChild>
-                      <Link
-                        href={collaboration.href}
-                        className="w-full cursor-pointer"
-                      >
-                        {collaboration.name}
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-              
               <Link href="/contact">
                 <Button className="bg-primary text-white hover:bg-primary/90">
                   Contact
@@ -166,27 +131,10 @@ export default function Navbar() {
                       <Link
                         key={pillar.name}
                         href={pillar.href}
-                        className="block text-base font-medium text-gray-700 hover:text-primary-600 py-1 pl-4"
+                        className="block text-base font-medium text-gray-700 hover:text-primary-600 py-2"
                         onClick={() => setIsOpen(false)}
                       >
                         {pillar.name}
-                      </Link>
-                    ))}
-                  </div>
-
-                  {/* Collaborations Section */}
-                  <div className="border-t pt-4">
-                    <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
-                      Collaborations
-                    </h3>
-                    {collaborations.map((collaboration) => (
-                      <Link
-                        key={collaboration.name}
-                        href={collaboration.href}
-                        className="block text-base font-medium text-gray-700 hover:text-primary-600 py-1 pl-4"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {collaboration.name}
                       </Link>
                     ))}
                   </div>
